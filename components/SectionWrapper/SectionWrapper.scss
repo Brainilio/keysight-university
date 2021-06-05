@@ -1,0 +1,28 @@
+@import "../../styles/base/colors.scss";
+
+.section-wrapper {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 1355px;
+	margin-top: 95px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	.section-wrapper-top {
+		display: flex;
+		justify-content: space-between;
+
+		h4 {
+			&:first-child {
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+	}
+
+	.section-wrapper-content {
+		margin-top: 30px;
+		width: 1355px;
+	}
+}

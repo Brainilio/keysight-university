@@ -15,7 +15,7 @@ const Header = () => {
 						<h1>Keysight University</h1>
 					</div>
 					<div className="landing-header-text-signup">
-						<ArrowCallToAction />
+						<ArrowCallToAction text="Sign up" />
 					</div>
 				</div>
 			</div>

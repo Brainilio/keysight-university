@@ -1,0 +1,28 @@
+@import "../../styles/base/colors.scss";
+
+.tutorial-card {
+	height: 510px;
+	padding: 30px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-end;
+	justify-content: start;
+	position: relative;
+	overflow: hidden;
+
+	.tutorial-card-footer {
+		padding-left: 60px;
+		h3 {
+			color: $white;
+		}
+	}
+}
+
+.dark {
+	.tutorial-card-footer {
+		padding-left: 60px;
+		h3 {
+			color: $midnight;
+		}
+	}
+}

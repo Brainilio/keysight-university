@@ -1,0 +1,18 @@
+.suits-best-banner {
+	width: 1355px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 90px;
+	background: url("../../public/pattern.svg") center/cover;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.suits-best-left {
+		width: 740px;
+	}
+
+	.suits-best-right {
+		width: 360px;
+	}
+}

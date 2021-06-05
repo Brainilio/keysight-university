@@ -1,10 +1,13 @@
 import Head from "next/head"
-import Image from "next/image"
 import BackToTop from "../components/BackToTop/BackToTop"
-import Button from "../components/Button/Button"
 import Header from "../components/Header/Header"
-import Interests from "../components/Interests/Interests"
-import Logo from "../components/Logo/Logo"
+import Interests from "../sections/Interests/Interests"
+import OthersWatching from "../sections/OthersWatching/OthersWatching"
+import LatestCourse from "../sections/LatestCourse/LatestCourse"
+import Tutorials from "../sections/Tutorials/Tutorials"
+import SuitsBest from "../sections/SuitsBest/SuitsBest"
+import Discover from "../sections/Discover/Discover"
+import GetInspired from "../sections/GetInspired/GetInspired"
 
 export default function Home() {
 	return (
@@ -18,6 +21,12 @@ export default function Home() {
 				<Header />
 				<Interests />
 				<BackToTop />
+				<OthersWatching />
+				<LatestCourse />
+				<Tutorials />
+				<SuitsBest />
+				<Discover />
+				<GetInspired />
 			</main>
 			<footer></footer>
 		</div>

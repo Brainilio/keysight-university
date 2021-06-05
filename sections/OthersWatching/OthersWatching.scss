@@ -1,0 +1,60 @@
+@import "../../styles/base/colors.scss";
+
+.others-watching-grid-left {
+	display: grid;
+	grid-gap: 15px;
+}
+.others-watching-grid-middle {
+	display: grid;
+	grid-gap: 15px;
+}
+.others-watching-grid-right {
+	display: grid;
+	grid-gap: 15px;
+}
+
+.card-with-background {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px auto;
+	height: 300px auto;
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+		color: $white;
+	}
+
+	.card-footer {
+		margin-top: 50px;
+	}
+}
+
+.card-with-image-bottom {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px;
+	overflow: hidden;
+	padding-bottom: 0px;
+	height: 786px auto;
+	.card-top {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+		z-index: 1;
+	}
+
+	.card-footer {
+		margin-top: 50px;
+		position: relative;
+
+		img {
+			position: absolute;
+			transform: translateX(-60%) translateY(-10%);
+		}
+	}
+}

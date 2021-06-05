@@ -1,6 +1,8 @@
 @import "../../styles/base/colors.scss";
 
 a {
+	h4 {
+	}
 	img {
 		margin-top: 10px;
 		transition: 0.1s linear;
@@ -10,4 +12,8 @@ a {
 			transform: translateX(5px);
 		}
 	}
+}
+
+.cta-dark {
+	color: $white;
 }

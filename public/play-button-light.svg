@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="PLAY_BUTTON" data-name="PLAY BUTTON" transform="translate(-1286 -2653)">
+    <g id="Background" transform="translate(1286 2653)" fill="none" stroke="#e80026" stroke-width="3">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="33.5" fill="none"/>
+    </g>
+    <path id="Icon_Play" data-name="Icon | Play" d="M19.941,13.619,1,26.239V1Z" transform="translate(1312.5 2674.5)" fill="none" stroke="#071b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

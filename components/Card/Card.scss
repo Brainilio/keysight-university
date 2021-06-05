@@ -1,0 +1,45 @@
+@import "../../styles/base/colors.scss";
+
+.card {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px auto;
+	height: 352px auto;
+
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+
+		.card-header-left {
+			display: grid;
+			grid-gap: 30px;
+		}
+	}
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+
+		.card-body-tag-row {
+			display: flex;
+			gap: 5px;
+		}
+	}
+
+	.card-footer {
+	}
+}
+
+.card-dark {
+	background-color: $apple;
+
+	.card-header {
+		color: $white;
+	}
+
+	.card-body {
+		color: $white;
+	}
+}
