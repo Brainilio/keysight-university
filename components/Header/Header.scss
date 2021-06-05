@@ -1,0 +1,28 @@
+@import "../../styles/base/colors.scss";
+
+.landing-header {
+	width: 1355px;
+	height: 411.67px;
+	background: url("../../public/pattern.svg") center/cover;
+	margin: 0 auto;
+	margin-top: 80px;
+
+	display: flex;
+	align-items: center;
+
+	.landing-header-content {
+		display: flex;
+		gap: 60px;
+		align-items: flex-start;
+		padding-left: 60px;
+		padding-right: 60px;
+		box-sizing: border-box;
+
+		.landing-header-text {
+			display: flex;
+			flex-direction: column;
+			height: inherit;
+			grid-gap: 50px;
+		}
+	}
+}

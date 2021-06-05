@@ -1,0 +1,53 @@
+// fontsizes
+$heading: 70px;
+$headline: 60px;
+$subheadline: 40px;
+$title: 18px;
+$body: 16px;
+$tag: 10px;
+
+// fontweights
+$regular: 400;
+$bold: 700;
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: $heading;
+	font-weight: $regular;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: $headline;
+	font-weight: $regular;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: $subheadline;
+	font-weight: $regular;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+	font-size: $title;
+	font-weight: $bold;
+}
+
+// not assigning these two to span, p or a, since they can differ according to design
+// turning it into classnames to assign it to text
+.body {
+	font-size: $body;
+	font-weight: $regular;
+}
+
+.tag {
+	font-size: $tag;
+	font-weight: $bold;
+	text-transform: uppercase;
+	letter-spacing: 75;
+}

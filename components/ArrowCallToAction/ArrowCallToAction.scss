@@ -1,0 +1,13 @@
+@import "../../styles/base/colors.scss";
+
+a {
+	img {
+		margin-top: 10px;
+		transition: 0.1s linear;
+	}
+	&:hover {
+		img {
+			transform: translateX(5px);
+		}
+	}
+}
