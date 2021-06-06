@@ -17,6 +17,7 @@ import "../sections/Tutorials/Tutorials.scss"
 import "../sections/SuitsBest/SuitsBest.scss"
 import "../sections/Discover/Discover.scss"
 import "../sections/GetInspired/GetInspired.scss"
+import "../sections/Footer/Footer.scss"
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />

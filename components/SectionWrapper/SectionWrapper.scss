@@ -3,10 +3,11 @@
 .section-wrapper {
 	margin: 0 auto;
 	box-sizing: border-box;
-	width: 1355px;
+	width: 100%;
 	margin-top: 95px;
 	display: flex;
 	flex-direction: column;
+	// border: 3px solid yellow;
 	position: relative;
 
 	.section-wrapper-top {

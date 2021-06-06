@@ -1,6 +1,53 @@
+@import "../../styles/base/colors.scss";
+
+.inspired-grid {
+	width: 100%;
+	display: flex;
+	gap: 20px;
+}
 .inspired-left {
-	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .inspired-right {
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	.inspired-right-bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+
+		.inspired-right-bottom-left {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+		.inspired-right-bottom-right {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+}
+
+.card-with-image-bt {
+	box-sizing: border-box;
+	background-color: #ecebf0;
+	padding-top: 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-image: url("../../public/otherbuild.png");
+	width: 441px;
+	min-height: 673px;
+	height: 100%;
+
+	.card-with-image-bt-content {
+		display: grid;
+		grid-gap: 15px;
+	}
 }

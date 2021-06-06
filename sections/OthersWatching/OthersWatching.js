@@ -5,7 +5,7 @@ import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
 import Picture from "../../public/picture-random.svg"
 import guyPicture from "../../public/avatar-guy.svg"
 import background from "../../public/background-card-1.svg"
-import machine from "../../public/machine.svg"
+import machine from "../../public/machine.png"
 import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
 
 const OthersWatching = () => {
@@ -51,9 +51,6 @@ const OthersWatching = () => {
 							<span className="body">Quick tutorials</span>
 							<h3>How to build</h3>
 							<ArrowCallToAction />
-						</div>
-						<div className="card-footer">
-							<img src={machine} />
 						</div>
 					</div>
 				</div>

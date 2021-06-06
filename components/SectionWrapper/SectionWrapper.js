@@ -5,6 +5,7 @@ const SectionWrapper = (props) => {
 		<section className="section-wrapper">
 			<div className="section-wrapper-top">
 				<h4>{props.title}</h4>
+
 				<a href="">
 					<h4 style={{ opacity: "50%" }}>View all</h4>
 				</a>

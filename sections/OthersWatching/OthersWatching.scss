@@ -17,8 +17,8 @@
 	padding: 60px;
 	box-sizing: border-box;
 	background-color: $sky;
-	width: 440px auto;
-	height: 300px auto;
+	width: 440px;
+	min-height: 300px;
 
 	.card-body {
 		display: flex;
@@ -37,24 +37,18 @@
 	box-sizing: border-box;
 	background-color: $sky;
 	width: 440px;
-	overflow: hidden;
 	padding-bottom: 0px;
-	height: 786px auto;
+	min-height: 786px;
+	background-image: url("../../public/machine.png");
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+
 	.card-top {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		grid-gap: 20px;
 		z-index: 1;
-	}
-
-	.card-footer {
-		margin-top: 50px;
-		position: relative;
-
-		img {
-			position: absolute;
-			transform: translateX(-60%) translateY(-10%);
-		}
 	}
 }

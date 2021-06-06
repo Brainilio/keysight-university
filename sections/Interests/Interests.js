@@ -1,6 +1,5 @@
 import React from "react"
 import Button from "../../components/Button/Button"
-import Divider from "../../components/Divider/Divider"
 import carouselArrows from "../../public/carousel-arrows.svg"
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
 

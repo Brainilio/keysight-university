@@ -8,11 +8,13 @@ import background from "../../public/background-card-1.svg"
 import machine from "../../public/machine.svg"
 import Picture from "../../public/picture-random.svg"
 import tutorial3 from "../../public/tutorial3.png"
+import wolverinebg from "../../public/backgroundwolverine.png"
+import other from "../../public/otherbuild.png"
 
 const GetInspired = () => {
 	return (
 		<SectionWrapper title="Get inspired to learn">
-			<Grid>
+			<div className="inspired-grid">
 				<div className="inspired-left">
 					<Card
 						dark
@@ -39,93 +41,86 @@ const GetInspired = () => {
 						<div className="card-top">
 							<span className="body">Quick tutorials</span>
 							<h3>How to build</h3>
-							<ArrowCallToAction red />
-						</div>
-						<div className="card-footer">
-							<img src={machine} />
+							<ArrowCallToAction />
 						</div>
 					</div>
-					<div
-						className="card-with-background"
-						style={{ background: `url(${background}) center/cover` }}
-					>
-						<div className="card-body">
-							<h3>Digital Oscilloscope</h3>
-						</div>
-						<div className="card-footer">
-							<ArrowCallToAction dark text="Learn More" />
-						</div>
-					</div>
+
+					<Card
+						dark
+						background={background}
+						arrowOnly
+						headlineSecond="Digital Oscilloscope"
+					/>
 				</div>
 				<div className="inspired-right">
 					<Card
 						topText="Engineering Essentials"
 						headlineFirst="Full course"
-						headlineSecond="Understanding 5G dynamic spectrum"
+						headlineSecond="Oscillioscope Probe 101: The Basics"
+						comment="Learn how to probe and measure common types of signals with an oscilloscope."
 						picture={Picture}
-						tags={[
-							{
-								active: false,
-								text: "Beginner",
-							},
-							{
-								active: false,
-								text: "Basic Skills",
-							},
-						]}
+						bigText
 					/>
 					<div className="inspired-right-bottom">
-						<Card
-							arrowOnly
-							topText="Article / 8 min read"
-							headlineSecond="Wolverines Don’t Usually Run This Fast"
-						/>
-						<div className="card-with-image-bottom">
-							<div className="card-top">
-								<span className="body">Article / 7 min read</span>
-								<h3>How to build</h3>
-								<ArrowCallToAction red />
-							</div>
-							<div className="card-footer">
-								<img src={machine} />
-							</div>
-						</div>
-						<div
-							className="tutorial-card"
-							style={{
-								backgroundImage: `url(${tutorial3})`,
-								backgroundSize: "470px",
-								backgroundRepeat: "no-repeat",
-							}}
-						>
-							<div className="tutorial-card-footer">
-								<h3 style={{ opacity: "50%" }}>Tutorial</h3>
-								<h3>How to build</h3>
+						<div className="inspired-right-bottom-left">
+							<Card
+								dark
+								background={wolverinebg}
+								arrowOnly
+								topText="Article / 8 min read"
+								headlineSecond="Wolverines Don’t Usually Run This Fast"
+							/>
+							<div className="card-with-image-bt">
+								<div className="card-with-image-bt-content">
+									<span className="body">Article / 7 min read</span>
+									<h3>
+										Personalized Support Helps 5G Device Team Master New Tests
+										in Hours
+									</h3>
+									<ArrowCallToAction red />
+								</div>
 							</div>
 						</div>
-						<Card
-							topText="Engineering Essentials"
-							picture={Picture}
-							headlineFirst="Full course"
-							headlineSecond="Signal Analyzer Fundamentals"
-							tags={[
-								{
-									active: true,
-									text: "10 Modules",
-								},
-								{
-									active: false,
-									text: "Beginner",
-								},
-								{
-									active: false,
-									text: "Basic Skills",
-								},
-							]}
-						/>
+
+						<div className="inspired-right-bottom-right">
+							<div
+								className="tutorial-card"
+								style={{
+									backgroundImage: `url(${tutorial3})`,
+									backgroundSize: "cover",
+									backgroundRepeat: "no-repeat",
+									height: "563px",
+								}}
+							>
+								<div className="tutorial-card-footer">
+									<h3 style={{ opacity: "50%" }}>Tutorial</h3>
+									<h3>How to build</h3>
+								</div>
+							</div>
+							<Card
+								topText="Engineering Essentials"
+								picture={Picture}
+								headlineFirst="Full course"
+								headlineSecond="Signal Analyzer Fundamentals"
+								tags={[
+									{
+										active: true,
+										text: "10 Modules",
+									},
+									{
+										active: false,
+										text: "Beginner",
+									},
+									{
+										active: false,
+										text: "Basic Skills",
+									},
+								]}
+							/>
+						</div>
 					</div>
 				</div>
-			</Grid>
+			</div>
 		</SectionWrapper>
 	)
 }
