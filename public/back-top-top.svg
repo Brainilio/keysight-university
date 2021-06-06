@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="BACK_TO_TOP_BUTTON" data-name="BACK TO TOP BUTTON" transform="translate(-1516 -332)">
+    <path id="Background" d="M22,0A22,22,0,1,1,0,22,22,22,0,0,1,22,0Z" transform="translate(1516 332)" fill="#f5f6f8"/>
+    <path id="Icon_Arrow" data-name="Icon | Arrow" d="M23.35,10.1,27.9,5.55H14m13.9,0L23.35,1" transform="translate(1532.5 375.4) rotate(-90)" fill="none" stroke="#071b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+  </g>
+</svg>

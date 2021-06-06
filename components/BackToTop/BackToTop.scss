@@ -1,0 +1,14 @@
+.back-to-top {
+	position: fixed;
+	z-index: 200;
+	right: 25px;
+	bottom: 30px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: all 0.1s linear;
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+}

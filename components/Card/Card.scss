@@ -1,0 +1,90 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+.card {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px auto;
+	min-height: 414px;
+	max-height: 100%;
+
+	@include mobile {
+		width: 100%;
+		padding: 60px 5px;
+
+		h2,
+		h3 {
+			overflow-wrap: break-word;
+			width: 320px;
+			word-wrap: break-word;
+		}
+	}
+
+	@include smallscreen {
+		padding: 60px;
+		h2,
+		h3 {
+			overflow-wrap: break-word;
+			width: 500px;
+			word-wrap: break-word;
+		}
+	}
+
+	@include largescreen {
+		padding: 60px;
+		box-sizing: border-box;
+		background-color: $sky;
+		width: 440px auto;
+		min-height: 414px;
+		max-height: 100%;
+
+		h2,
+		h3 {
+			overflow-wrap: break-word;
+			width: auto;
+		}
+	}
+
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+
+		@include mobile {
+			flex-direction: column-reverse;
+			width: 100%;
+		}
+
+		@include xlscreen {
+			flex-direction: row;
+			width: auto;
+		}
+
+		.card-header-left {
+			display: grid;
+			grid-gap: 30px;
+		}
+	}
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+
+		.card-body-tag-row {
+			display: flex;
+			gap: 5px;
+		}
+	}
+}
+
+.card-dark {
+	background-color: $apple;
+
+	.card-header {
+		color: $white;
+	}
+
+	.card-body {
+		color: $white;
+	}
+}

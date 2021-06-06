@@ -1,0 +1,68 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.landing-header {
+	width: 100%;
+	height: 411.67px;
+	background: url("../../public/pattern.svg") center/cover;
+	margin: 0 auto;
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+
+	@include mobile {
+		height: auto;
+	}
+
+	@include largescreen {
+		height: 411.67px;
+	}
+
+	.landing-header-content {
+		display: flex;
+		gap: 60px;
+		align-items: flex-start;
+		padding-left: 60px;
+		padding-right: 60px;
+		box-sizing: border-box;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px 0;
+			gap: 0;
+
+			.vertical-divider {
+				display: none;
+			}
+		}
+
+		@include largescreen {
+			flex-direction: row;
+			gap: 60px;
+			padding-left: 60px;
+			padding-right: 60px;
+			align-items: flex-start;
+
+			.vertical-divider {
+				display: block;
+			}
+		}
+
+		.landing-header-text {
+			display: flex;
+			flex-direction: column;
+			height: inherit;
+			grid-gap: 50px;
+
+			@include mobile {
+				margin-top: 20px;
+			}
+
+			@include largescreen {
+				margin-top: 0;
+			}
+		}
+	}
+}

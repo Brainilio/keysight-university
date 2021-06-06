@@ -1,0 +1,186 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/rules";
+@import "../../styles/utils/breakpoints";
+
+.footer {
+	margin: 0 auto;
+	margin-top: 135px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+
+	@include mobile {
+		align-items: center;
+		justify-content: center;
+		width: $containerWidthMobile;
+	}
+
+	@include tablet {
+		width: $containerWidthTablet;
+	}
+
+	@include smallscreen {
+		width: $containerWidthSmallScreen;
+	}
+
+	@include largescreen {
+		justify-content: space-between;
+		width: $containerWidthLargeScreen;
+	}
+
+	@include xlscreen {
+		width: $containerXLScreen;
+	}
+
+	@include xlscreen {
+		width: $containerXXLScreen;
+	}
+
+	.footer-logo {
+		display: flex;
+		flex-direction: column;
+
+		@include smallscreen {
+			display: none;
+		}
+
+		@include largescreen {
+			display: flex;
+		}
+
+		img {
+			margin-top: 10px;
+		}
+	}
+	.rest {
+		height: 116px;
+		display: flex;
+
+		@include mobile {
+			display: none;
+		}
+
+		@include smallscreen {
+			display: flex;
+		}
+
+		.rest-text {
+			display: grid;
+			grid-gap: 8px;
+			justify-items: start;
+
+			@include smallscreen {
+				margin: 0 2em;
+			}
+
+			@include xlscreen {
+				margin: 0;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					margin: 15px 0;
+				}
+			}
+		}
+
+		.small-divider {
+			margin-right: 60px;
+			border-left: 2px solid $midnight-lighter;
+			height: 180px;
+
+			@include mobile {
+				display: none;
+			}
+
+			@include xlscreen {
+				display: block;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	margin: 30px auto;
+	margin-top: 60px;
+	width: 1355px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include mobile {
+		width: $containerWidthMobile;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@include tablet {
+		width: $containerWidthTablet;
+	}
+
+	@include smallscreen {
+		width: $containerWidthSmallScreen;
+	}
+
+	@include largescreen {
+		width: $containerWidthLargeScreen;
+	}
+
+	@include xlscreen {
+		width: $containerXLScreen;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	@include xlscreen {
+		width: $containerXXLScreen;
+	}
+
+	.footer-bottom-left {
+		ul {
+			margin: 0;
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: space-evenly;
+			gap: 30px;
+
+			@include mobile {
+				display: none;
+			}
+
+			@include smallscreen {
+				display: flex;
+				margin-bottom: 30px;
+			}
+
+			@include xlscreen {
+				margin-bottom: 0;
+			}
+
+			li {
+				display: flex;
+				align-items: center;
+
+				.smaller-divider {
+					margin-left: 30px;
+					border-left: 2px solid $midnight-lighter;
+					height: 30px;
+
+					@include mobile {
+						display: none;
+					}
+
+					@include xlscreen {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@import "../../styles/base/colors.scss";
+
+a {
+	h4 {
+	}
+	img {
+		margin-top: 10px;
+		transition: 0.1s linear;
+	}
+	&:hover {
+		img {
+			transform: translateX(5px);
+		}
+	}
+}
+
+.cta-dark {
+	color: $white;
+}

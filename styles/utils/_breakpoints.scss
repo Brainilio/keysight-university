@@ -1,0 +1,43 @@
+// Screen sizes
+$mobile: 320px;
+$tablet: 480px;
+$smallscreen: 768px;
+$largescreen: 1024px;
+$xlscreen: 1200px;
+$xxlscreen: 1400px;
+
+@mixin mobile {
+	@media (min-width: #{$mobile}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet}) {
+		@content;
+	}
+}
+
+@mixin smallscreen {
+	@media (min-width: #{$smallscreen}) {
+		@content;
+	}
+}
+
+@mixin largescreen {
+	@media (min-width: #{$largescreen}) {
+		@content;
+	}
+}
+
+@mixin xlscreen {
+	@media (min-width: #{$xlscreen}) {
+		@content;
+	}
+}
+
+@mixin xxlscreen {
+	@media (min-width: #{$xxlscreen}) {
+		@content;
+	}
+}

@@ -1,0 +1,131 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.interest-row {
+	margin-top: 30px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+
+	@include mobile {
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+	}
+
+	@include largescreen {
+		flex-direction: row;
+		align-items: flex-start;
+		height: 200px;
+	}
+
+	.mechanical {
+		width: 333px;
+		height: 200px;
+		background-color: $apple;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include mobile {
+			width: 320px;
+			flex-shrink: 0;
+		}
+
+		@include xxlscreen {
+			width: 333px;
+			height: 200px;
+			background-color: $apple;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		div {
+			display: grid;
+			grid-gap: 8px;
+		}
+	}
+
+	.right-row {
+		background-color: $sky;
+		display: flex;
+		width: calc(100% - 333px);
+		box-sizing: border-box;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 200px;
+
+		@include mobile {
+			flex-direction: column;
+			height: auto;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding-left: 50px;
+			width: 320px;
+			gap: 20px;
+		}
+
+		@include largescreen {
+			display: flex;
+			flex-direction: row;
+			width: calc(100% - 333px);
+			box-sizing: border-box;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 200px;
+		}
+
+		.rest {
+			width: 137px auto;
+			height: 116px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			@include mobile {
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			@include xxlscreen {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			div {
+				display: grid;
+				grid-gap: 8px;
+			}
+
+			.small-divider {
+				margin-left: 50px;
+				border-left: 2px solid $midnight-lighter;
+				height: 100px;
+
+				@include mobile {
+					display: none;
+				}
+
+				@include xxlscreen {
+					display: block;
+				}
+			}
+		}
+
+		.carousel-arrows {
+			width: 137px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include mobile {
+				display: none;
+			}
+
+			@include xxlscreen {
+				display: block;
+			}
+		}
+	}
+}

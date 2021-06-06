@@ -1,0 +1,67 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.others-watching-grid-left {
+	display: grid;
+	grid-gap: 15px;
+}
+.others-watching-grid-middle {
+	display: grid;
+	grid-gap: 15px;
+}
+.others-watching-grid-right {
+	display: grid;
+	grid-gap: 15px;
+}
+
+.card-with-background {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px;
+	min-height: 300px;
+
+	@include mobile {
+		width: 100%;
+	}
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+		color: $white;
+	}
+
+	.card-footer {
+		margin-top: 50px;
+	}
+}
+
+.card-with-image-bottom {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	width: 440px;
+	padding-bottom: 0px;
+	min-height: 786px;
+	background-image: url("../../public/machine.png");
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+
+	@include mobile {
+		width: 320px;
+	}
+
+	@include smallscreen {
+		width: 100%;
+	}
+
+	.card-top {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+		z-index: 1;
+	}
+}

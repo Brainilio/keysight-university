@@ -1,0 +1,26 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	min-height: 0;
+	min-width: 0;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+
+	@include largescreen {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@include xlscreen {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@include xxlscreen {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
