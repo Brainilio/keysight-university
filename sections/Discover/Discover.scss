@@ -1,7 +1,18 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
 .discover-card {
 	height: 490px;
-
 	background-color: #faf9fa;
+
+	@include mobile {
+		height: auto;
+	}
+
+	@include xlscreen {
+		height: 490px;
+	}
+
 	.discover-card-header {
 		height: 210px;
 		padding-left: 60px;

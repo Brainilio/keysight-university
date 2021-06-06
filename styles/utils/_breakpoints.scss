@@ -4,6 +4,7 @@ $tablet: 480px;
 $smallscreen: 768px;
 $largescreen: 1024px;
 $xlscreen: 1200px;
+$xxlscreen: 1400px;
 
 @mixin mobile {
 	@media (min-width: #{$mobile}) {
@@ -31,6 +32,12 @@ $xlscreen: 1200px;
 
 @mixin xlscreen {
 	@media (min-width: #{$xlscreen}) {
+		@content;
+	}
+}
+
+@mixin xxlscreen {
+	@media (min-width: #{$xxlscreen}) {
 		@content;
 	}
 }

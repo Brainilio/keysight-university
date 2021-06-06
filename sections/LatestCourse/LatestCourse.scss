@@ -1,6 +1,27 @@
 @import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
 
 .latest-course-card {
 	width: 100%;
 	display: flex;
+
+	@include mobile {
+		flex-direction: column;
+	}
+
+	@include xlscreen {
+		.latest-course-picture {
+			width: 45%;
+		}
+
+		flex-direction: row;
+	}
+
+	@include xxlscreen {
+		.latest-course-picture {
+			width: auto;
+		}
+
+		flex-direction: row;
+	}
 }

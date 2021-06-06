@@ -1,9 +1,18 @@
 @import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
 
 .inspired-grid {
 	width: 100%;
 	display: flex;
 	gap: 20px;
+
+	@include mobile {
+		flex-direction: column;
+	}
+
+	@include largescreen {
+		flex-direction: row;
+	}
 }
 .inspired-left {
 	display: flex;
@@ -21,6 +30,14 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
+
+		@include largescreen {
+			grid-template-columns: 1fr;
+		}
+
+		@include xlscreen {
+			grid-template-columns: 1fr 1fr;
+		}
 
 		.inspired-right-bottom-left {
 			display: flex;
@@ -42,9 +59,22 @@
 	padding-left: 60px;
 	padding-right: 60px;
 	background-image: url("../../public/otherbuild.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 441px;
 	min-height: 673px;
 	height: 100%;
+
+	@include mobile {
+		width: 100%;
+		height: auto;
+	}
+
+	@include xlscreen {
+		width: 441px;
+		min-height: 673px;
+		height: auto;
+	}
 
 	.card-with-image-bt-content {
 		display: grid;

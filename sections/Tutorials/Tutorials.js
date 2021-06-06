@@ -13,8 +13,6 @@ const Tutorials = () => {
 					className="tutorial-card"
 					style={{
 						backgroundImage: `url(${tutorial1})`,
-						backgroundSize: "470px",
-						backgroundRepeat: "no-repeat",
 					}}
 				>
 					<div className="tutorial-card-footer">
@@ -26,8 +24,6 @@ const Tutorials = () => {
 					className="tutorial-card  dark"
 					style={{
 						backgroundImage: `url(${tutorial2})`,
-						backgroundSize: "470px",
-						backgroundRepeat: "no-repeat",
 					}}
 				>
 					<div className="tutorial-card-footer">
@@ -39,8 +35,6 @@ const Tutorials = () => {
 					className="tutorial-card"
 					style={{
 						backgroundImage: `url(${tutorial3})`,
-						backgroundSize: "470px",
-						backgroundRepeat: "no-repeat",
 					}}
 				>
 					<div className="tutorial-card-footer">

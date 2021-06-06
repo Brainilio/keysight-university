@@ -1,4 +1,5 @@
 @import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
 
 .tutorial-card {
 	min-height: 510px;
@@ -9,6 +10,14 @@
 	justify-content: start;
 	position: relative;
 	overflow: hidden;
+	background-size: 470px;
+	background-repeat: no-repeat;
+
+	@include smallscreen {
+		width: 100%;
+		background-size: cover;
+		justify-content: center;
+	}
 
 	.tutorial-card-footer {
 		padding-left: 60px;

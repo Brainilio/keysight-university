@@ -89,7 +89,7 @@ const GetInspired = () => {
 									backgroundImage: `url(${tutorial3})`,
 									backgroundSize: "cover",
 									backgroundRepeat: "no-repeat",
-									height: "563px",
+									height: "100px",
 								}}
 							>
 								<div className="tutorial-card-footer">

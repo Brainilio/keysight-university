@@ -8,7 +8,13 @@ const LatestCourse = () => {
 	return (
 		<SectionWrapper title="Brand new course">
 			<div className="latest-course-card">
-				<img src={latestcoursepic} />
+				<img
+					src={latestcoursepic}
+					className="latest-course-picture"
+					style={{
+						objectFit: "cover",
+					}}
+				/>
 				<Card
 					topText="Engineering Essentials"
 					headlineFirst="Full course"

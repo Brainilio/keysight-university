@@ -1,4 +1,5 @@
 @import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
 
 .section-wrapper {
 	margin: 0 auto;
@@ -14,6 +15,11 @@
 		display: flex;
 		justify-content: space-between;
 
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		h4 {
 			&:first-child {
 				margin: 0 auto;
@@ -24,6 +30,11 @@
 
 	.section-wrapper-content {
 		margin-top: 30px;
-		width: 1355px;
+		width: 100%;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }

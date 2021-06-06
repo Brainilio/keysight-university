@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "base/colors";
 @import "base/typography";
+@import "utils/breakpoints";
+@import "base/rules";
 
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: "Raleway", "sans-serif";
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 a {
@@ -17,16 +21,18 @@ a {
 
 .layout {
 	display: flex;
-
 	.left-col {
-		width: 85px;
+		width: 60px;
 		height: 100vh;
 
 		nav {
 			position: fixed;
-			width: 85px;
+			width: 60px;
 			height: 100vh;
-			background-color: $midnight;
+			background-color: #221c27;
+			z-index: 100;
+			padding: 15px;
+			box-sizing: border-box;
 
 			.nav-item-button {
 				border: none;
@@ -56,12 +62,35 @@ a {
 	.right-col {
 		width: 100%;
 		// border: 3px solid red;
-		display: grid;
-		justify-items: center;
 
 		main {
 			// border: 3px solid blue;
-			width: 1355px;
+			margin: 0 auto;
+			overflow: hidden;
+
+			@include mobile {
+				width: $containerWidthMobile;
+			}
+
+			@include tablet {
+				width: $containerWidthTablet;
+			}
+
+			@include smallscreen {
+				width: $containerWidthSmallScreen;
+			}
+
+			@include largescreen {
+				width: $containerWidthLargeScreen;
+			}
+
+			@include xlscreen {
+				width: $containerXLScreen;
+			}
+
+			@include xxlscreen {
+				width: $containerXXLScreen;
+			}
 		}
 	}
 }
