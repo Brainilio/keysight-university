@@ -11,12 +11,17 @@
 	}
 
 	@include largescreen {
+		flex-direction: column;
+	}
+
+	@include xlscreen {
 		flex-direction: row;
 	}
 }
 .inspired-left {
 	display: flex;
 	flex-direction: column;
+
 	gap: 20px;
 }
 
@@ -31,23 +36,47 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
 
-		@include largescreen {
+		@include smallscreen {
 			grid-template-columns: 1fr;
+			align-items: center;
+			justify-items: center;
 		}
 
 		@include xlscreen {
 			grid-template-columns: 1fr 1fr;
+			align-items: flex-start;
+			justify-items: flex-start;
 		}
 
 		.inspired-right-bottom-left {
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
+
+			@include smallscreen {
+				align-items: center;
+				justify-items: center;
+			}
 		}
 		.inspired-right-bottom-right {
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
+
+			@include smallscreen {
+				align-items: center;
+				justify-items: center;
+			}
+
+			@include largescreen {
+				display: none;
+			}
+
+			@include xxlscreen {
+				display: flex;
+				align-items: flex-start;
+				justify-items: start;
+			}
 		}
 	}
 }
@@ -66,13 +95,24 @@
 	height: 100%;
 
 	@include mobile {
+		width: 320px;
+		height: auto;
+	}
+
+	@include smallscreen {
 		width: 100%;
 		height: auto;
 	}
 
 	@include xlscreen {
+		width: 580px;
+		min-height: 578px;
+		height: auto;
+	}
+
+	@include xxlscreen {
 		width: 441px;
-		min-height: 673px;
+		min-height: 670px;
 		height: auto;
 	}
 

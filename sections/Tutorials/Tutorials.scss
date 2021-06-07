@@ -14,13 +14,20 @@
 	background-repeat: no-repeat;
 
 	@include smallscreen {
-		width: 100%;
+		width: 500px;
 		background-size: cover;
 		justify-content: center;
 	}
 
+	@include xlscreen {
+		width: 600px;
+	}
+
+	@include xxlscreen {
+		width: 100%;
+	}
+
 	.tutorial-card-footer {
-		padding-left: 60px;
 		h3 {
 			color: $white;
 		}
@@ -29,9 +36,12 @@
 
 .dark {
 	.tutorial-card-footer {
-		padding-left: 60px;
 		h3 {
 			color: $midnight;
 		}
 	}
+}
+
+.inspired-tut {
+	height: 560px;
 }

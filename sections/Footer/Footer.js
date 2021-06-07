@@ -41,6 +41,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="rest">
+					<div className="small-divider" aria-hidden="true"></div>
 					<div className="rest-text">
 						<span className="body">
 							<strong>Aliquam luctus</strong>

@@ -84,12 +84,11 @@ const GetInspired = () => {
 
 						<div className="inspired-right-bottom-right">
 							<div
-								className="tutorial-card"
+								className="tutorial-card inspired-tut"
 								style={{
 									backgroundImage: `url(${tutorial3})`,
 									backgroundSize: "cover",
 									backgroundRepeat: "no-repeat",
-									height: "100px",
 								}}
 							>
 								<div className="tutorial-card-footer">

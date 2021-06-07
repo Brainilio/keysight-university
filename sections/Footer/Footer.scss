@@ -33,7 +33,7 @@
 		width: $containerXLScreen;
 	}
 
-	@include xlscreen {
+	@include xxlscreen {
 		width: $containerXXLScreen;
 	}
 
@@ -41,7 +41,7 @@
 		display: flex;
 		flex-direction: column;
 
-		@include smallscreen {
+		@include tablet {
 			display: none;
 		}
 
@@ -59,6 +59,11 @@
 
 		@include mobile {
 			display: none;
+		}
+
+		@include tablet {
+			display: flex;
+			height: auto;
 		}
 
 		@include smallscreen {
@@ -129,6 +134,8 @@
 
 	@include largescreen {
 		width: $containerWidthLargeScreen;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	@include xlscreen {
@@ -137,7 +144,7 @@
 		justify-content: space-between;
 	}
 
-	@include xlscreen {
+	@include xxlscreen {
 		width: $containerXXLScreen;
 	}
 

@@ -1,15 +1,16 @@
 @import "../../styles/base/colors.scss";
 @import "../../styles/utils/breakpoints";
+
 .card {
 	padding: 60px;
 	box-sizing: border-box;
 	background-color: $sky;
 	width: 440px auto;
-	min-height: 414px;
+	min-height: 450px;
 	max-height: 100%;
 
 	@include mobile {
-		width: 100%;
+		width: 400px;
 		padding: 60px 5px;
 
 		h2,
@@ -20,8 +21,14 @@
 		}
 	}
 
+	@include tablet {
+		width: 440px auto;
+		padding: 40px;
+	}
+
 	@include smallscreen {
 		padding: 60px;
+		width: 100%;
 		h2,
 		h3 {
 			overflow-wrap: break-word;
