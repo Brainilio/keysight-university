@@ -9,9 +9,16 @@
 		flex-direction: column;
 	}
 
-	@include xlscreen {
+	@include largescreen {
 		.latest-course-picture {
 			width: 45%;
+		}
+		flex-direction: row;
+	}
+
+	@include xlscreen {
+		.latest-course-picture {
+			width: 50%;
 		}
 
 		flex-direction: row;

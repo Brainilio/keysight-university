@@ -12,6 +12,14 @@
 .others-watching-grid-right {
 	display: grid;
 	grid-gap: 15px;
+
+	@include largescreen {
+		display: none;
+	}
+
+	@include xxlscreen {
+		display: grid;
+	}
 }
 
 .card-with-background {
@@ -23,6 +31,10 @@
 
 	@include mobile {
 		width: 100%;
+	}
+
+	@include xxlscreen {
+		width: 440px;
 	}
 
 	.card-body {
@@ -55,6 +67,14 @@
 
 	@include smallscreen {
 		width: 100%;
+	}
+
+	@include largescreen {
+		width: 600px;
+	}
+
+	@include xxlscreen {
+		width: 440px;
 	}
 
 	.card-top {
