@@ -9,7 +9,7 @@ const Footer = () => {
 			<div className="footer">
 				<div className="footer-logo">
 					<span className="body">Keysight University is an initiative of</span>
-					<img src={kslogo} />
+					<img src={kslogo} alt="logo" />
 				</div>
 				<FooterBlock
 					title="Courses"
