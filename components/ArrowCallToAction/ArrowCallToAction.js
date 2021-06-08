@@ -11,7 +11,8 @@ const ArrowCallToAction = (props) => {
 			className={`title ${props.dark ? "cta-dark" : ""}`}
 			aria-label={`Go to ${props.text ? props.text : "link"}`}
 		>
-			{props.text}
+			<span>{props.text}</span>
+
 			<img
 				src={props.dark ? ArrowLight : props.red ? ArrowRed : Arrow}
 				aria-hidden="true"
