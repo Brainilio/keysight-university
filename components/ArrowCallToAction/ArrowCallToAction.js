@@ -6,7 +6,11 @@ import PropTypes from "prop-types"
 
 const ArrowCallToAction = (props) => {
 	return (
-		<a href="/" className={`title ${props.dark ? "cta-dark" : ""}`}>
+		<a
+			href="/"
+			className={`title ${props.dark ? "cta-dark" : ""}`}
+			aria-label={`Go to ${props.text ? props.text : "link"}`}
+		>
 			<h4>{props.text}</h4>
 			<img
 				src={props.dark ? ArrowLight : props.red ? ArrowRed : Arrow}

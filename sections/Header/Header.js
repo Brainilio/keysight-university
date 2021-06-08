@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<div className="landing-header">
 			<div className="landing-header-content">
-				<Logo width="170px" />
+				<Logo width="170px" height="170px" />
 				<Divider />
 				<div className="landing-header-text">
 					<div className="landing-header-text-title">

@@ -9,8 +9,12 @@ import SuitsBest from "../sections/SuitsBest/SuitsBest"
 import Discover from "../sections/Discover/Discover"
 import GetInspired from "../sections/GetInspired/GetInspired"
 import Layout from "../layout/layout"
+import { useEffect } from "react"
 
 export default function Home() {
+	useEffect(() => {
+		document.documentElement.lang = "en-us"
+	})
 	return (
 		<div lang="en">
 			<Head>

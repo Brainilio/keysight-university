@@ -2,7 +2,7 @@ import React from "react"
 import kslogo from "../../public/images/ks-logo.webp"
 import socialicons from "../../public/images/social-icons.webp"
 import FooterBlock from "../../components/FooterBlock/FooterBlock"
-
+import Image from "next/image"
 const Footer = () => {
 	return (
 		<footer>
@@ -88,7 +88,12 @@ const Footer = () => {
 					</ul>
 				</div>
 				<div className="footer-bottom-right">
-					<img src={socialicons} />
+					<Image
+						src={socialicons}
+						alt="social media icons"
+						width="200px"
+						height="20px"
+					/>
 				</div>
 			</div>
 		</footer>

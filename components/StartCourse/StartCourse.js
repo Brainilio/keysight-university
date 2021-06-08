@@ -7,7 +7,10 @@ const StartCourse = (props) => {
 	return (
 		<div className="start-course">
 			<div className="start-course-left">
-				<img src={props.dark ? PlayButtonDark : PlayButtonLight} />
+				<img
+					alt="play button"
+					src={props.dark ? PlayButtonDark : PlayButtonLight}
+				/>
 			</div>
 			<div className="start-course-right">
 				<ArrowCallToAction dark={props.dark} text="Start course now" />

@@ -11,7 +11,7 @@ const Navigation = () => {
 	return (
 		<nav className="navigation-bar">
 			<div className="top-navigation-items">
-				<Logo light />
+				<Logo light width="60px" height="60px" />
 				<NavigationItem icon={hamburger} />
 				<NavigationItem icon={search} />
 			</div>

@@ -4,6 +4,7 @@ import Tag from "../Tag/Tag"
 import ArrowCallToAction from "../ArrowCallToAction/ArrowCallToAction"
 import PropTypes from "prop-types"
 import LowOpacityText from "../LowOpacityText/LowOpacityText"
+import Image from "next/image"
 
 const Card = (props) => {
 	return (
@@ -23,7 +24,16 @@ const Card = (props) => {
 						<LowOpacityText>{props.headlineFirst}</LowOpacityText>
 					)}
 				</div>
-				<div>{props.picture && <img src={props.picture} />}</div>
+				<div>
+					{props.picture && (
+						<Image
+							width="70px"
+							height="70px"
+							alt="instructor"
+							src={props.picture}
+						/>
+					)}
+				</div>
 			</div>
 			<div className="card-body">
 				{props.bigText ? (
