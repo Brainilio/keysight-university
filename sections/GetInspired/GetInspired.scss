@@ -2,11 +2,11 @@
 @import "../../styles/utils/breakpoints";
 
 .inspired-grid {
-	width: 100%;
-	display: flex;
-	gap: 20px;
+	display: grid;
+	grid-gap: 20px;
 
-	@include mobile {
+	@include smallscreen {
+		display: flex;
 		flex-direction: column;
 	}
 
@@ -17,12 +17,24 @@
 	@include xlscreen {
 		flex-direction: row;
 	}
-}
-.inspired-left {
-	display: flex;
-	flex-direction: column;
 
+	@include xxlscreen {
+		display: grid;
+	}
+}
+
+.inspired-left {
+	display: grid;
+	width: 440px auto;
 	gap: 20px;
+
+	@include xlscreen {
+		width: 50%;
+	}
+
+	@include xxlscreen {
+		width: 100%;
+	}
 }
 
 .inspired-right {
@@ -31,25 +43,29 @@
 	flex-direction: column;
 	gap: 20px;
 
+	@include xlscreen {
+		width: 50%;
+	}
+
+	@include xxlscreen {
+		grid-column: 2;
+		width: auto;
+	}
+
 	.inspired-right-bottom {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
+		display: flex;
+		gap: 20px;
 
 		@include smallscreen {
-			grid-template-columns: 1fr;
-			align-items: center;
-			justify-items: center;
+			flex-direction: column;
 		}
 
-		@include xlscreen {
-			grid-template-columns: 1fr 1fr;
-			align-items: flex-start;
-			justify-items: flex-start;
+		@include xxlscreen {
+			flex-direction: row;
 		}
 
 		.inspired-right-bottom-left {
-			display: flex;
+			display: grid;
 			flex-direction: column;
 			gap: 20px;
 
@@ -87,33 +103,16 @@
 	padding-top: 60px;
 	padding-left: 60px;
 	padding-right: 60px;
-	background-image: url("../../public/otherbuild.png");
+	background-image: url("../../public/images/otherbuild.webp");
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 441px;
-	min-height: 673px;
-	height: 100%;
+	height: 655px;
 
 	@include mobile {
-		width: 320px;
-		height: auto;
-	}
-
-	@include smallscreen {
 		width: 100%;
-		height: auto;
-	}
-
-	@include xlscreen {
-		width: 580px;
-		min-height: 578px;
-		height: auto;
-	}
-
-	@include xxlscreen {
-		width: 441px;
-		min-height: 670px;
-		height: auto;
+		min-height: auto;
+		height: 655px;
 	}
 
 	.card-with-image-bt-content {

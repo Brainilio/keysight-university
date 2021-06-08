@@ -1,15 +1,16 @@
 import React from "react"
 import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
 import Card from "../../components/Card/Card"
-import Grid from "../../components/Grid/Grid"
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
-import guyPicture from "../../public/avatar-guy.svg"
-import background from "../../public/background-card-1.svg"
-import machine from "../../public/machine.svg"
-import Picture from "../../public/picture-random.svg"
-import tutorial3 from "../../public/tutorial3.png"
-import wolverinebg from "../../public/backgroundwolverine.png"
-import other from "../../public/otherbuild.png"
+import TutorialCard from "../../components/TutorialCard/TutorialCard"
+import LongCardWithBackground from "../../components/LongCardWithBackground/LongCardWithBackground"
+
+import machine from "../../public/images/machine.webp"
+import guyPicture from "../../public/images/avatar-guy.svg"
+import background from "../../public/images/background-card-1.svg"
+import Picture from "../../public/images/picture-random.svg"
+import tutorial3 from "../../public/images/tutorialcardgrid.webp"
+import wolverinebg from "../../public/images/backgroundwolverine.webp"
 
 const GetInspired = () => {
 	return (
@@ -37,13 +38,11 @@ const GetInspired = () => {
 							},
 						]}
 					/>
-					<div className="card-with-image-bottom">
-						<div className="card-top">
-							<span className="body">Quick tutorials</span>
-							<h3>How to build</h3>
-							<ArrowCallToAction />
-						</div>
-					</div>
+					<LongCardWithBackground
+						background={machine}
+						topText="Quick tutorials"
+						headline="How to build"
+					/>
 
 					<Card
 						dark
@@ -83,19 +82,13 @@ const GetInspired = () => {
 						</div>
 
 						<div className="inspired-right-bottom-right">
-							<div
-								className="tutorial-card inspired-tut"
-								style={{
-									backgroundImage: `url(${tutorial3})`,
-									backgroundSize: "cover",
-									backgroundRepeat: "no-repeat",
-								}}
-							>
-								<div className="tutorial-card-footer">
-									<h3 style={{ opacity: "50%" }}>Tutorial</h3>
-									<h3>How to build</h3>
-								</div>
-							</div>
+							<TutorialCard
+								isInGrid
+								background={tutorial3}
+								headlineFirst="Tutorial"
+								headlineSecond="How to build"
+							/>
+
 							<Card
 								topText="Engineering Essentials"
 								picture={Picture}

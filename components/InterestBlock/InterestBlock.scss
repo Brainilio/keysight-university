@@ -1,0 +1,39 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.interest-block {
+	width: 137px auto;
+	height: 116px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include mobile {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@include xxlscreen {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.interest-block-content {
+		display: grid;
+		grid-gap: 8px;
+	}
+
+	.small-divider {
+		margin-left: 50px;
+		border-left: 2px solid $midnight-lighter;
+		height: 100px;
+
+		@include mobile {
+			display: none;
+		}
+
+		@include xxlscreen {
+			display: block;
+		}
+	}
+}

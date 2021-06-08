@@ -1,15 +1,29 @@
 import React from "react"
-import Arrow from "../../public/arrow.svg"
-import ArrowLight from "../../public/arrow-white.svg"
-import ArrowRed from "../../public/arrow-red.svg"
+import Arrow from "../../public/icons/arrow.svg"
+import ArrowLight from "../../public/icons/arrow-white.svg"
+import ArrowRed from "../../public/icons/arrow-red.svg"
+import PropTypes from "prop-types"
 
 const ArrowCallToAction = (props) => {
 	return (
-		<a href="" className={`title ${props.dark ? "cta-dark" : ""}`}>
+		<a
+			href="/"
+			className={`title ${props.dark ? "cta-dark" : ""}`}
+			aria-label={`Go to ${props.text ? props.text : "link"}`}
+		>
 			<h4>{props.text}</h4>
-			<img src={props.dark ? ArrowLight : props.red ? ArrowRed : Arrow} />
+			<img
+				src={props.dark ? ArrowLight : props.red ? ArrowRed : Arrow}
+				aria-hidden="true"
+			/>
 		</a>
 	)
+}
+
+ArrowCallToAction.propTypes = {
+	dark: PropTypes.bool,
+	text: PropTypes.string,
+	red: PropTypes.bool,
 }
 
 export default ArrowCallToAction

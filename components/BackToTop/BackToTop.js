@@ -1,10 +1,21 @@
 import React from "react"
-import icon from "../../public/back-top-top.svg"
+import icon from "../../public/icons/back-top-top.svg"
 
 const BackToTop = () => {
+	const moveToTopHandler = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		})
+	}
 	return (
-		<button className="back-to-top">
-			<img className="" src={icon} aria-role="button" />
+		<button className="back-to-top" onClick={moveToTopHandler}>
+			<img
+				className=""
+				src={icon}
+				alt="arrow going up"
+				aria-label="Go back up"
+			/>
 		</button>
 	)
 }

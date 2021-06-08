@@ -1,4 +1,5 @@
-@import "../../styles/base/colors.scss";
+@import "../../styles/base/colors";
+@import "../../styles/base/rules";
 @import "../../styles/utils/breakpoints";
 
 .section-wrapper {
@@ -18,6 +19,10 @@
 		@include mobile {
 			flex-direction: column;
 			align-items: center;
+		}
+
+		@include largescreen {
+			flex-direction: row;
 		}
 
 		h4 {

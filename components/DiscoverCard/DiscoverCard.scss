@@ -1,0 +1,40 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
+
+.discover-card {
+	height: 490px;
+	background-color: #faf9fa;
+
+	@include mobile {
+		height: auto;
+	}
+
+	@include xlscreen {
+		height: 490px;
+	}
+
+	.discover-card-header {
+		height: 210px;
+		padding-left: 60px;
+		padding-bottom: 35px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: flex-end;
+
+		span {
+			color: white;
+		}
+	}
+
+	.discover-card-body {
+		padding-left: 60px;
+		padding-top: 35px;
+		padding-right: 25px;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+
+		.title-two-colors {
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,6 +1,21 @@
 @import "../../styles/base/colors.scss";
+@import "../../styles/utils/breakpoints";
 
 .vertical-divider {
 	border-left: 2px solid $midnight-lighter;
 	height: 260px;
+}
+
+.small-divider {
+	margin-left: 50px;
+	border-left: 2px solid $midnight-lighter;
+	height: 100px;
+
+	@include mobile {
+		display: none;
+	}
+
+	@include xxlscreen {
+		display: block;
+	}
 }

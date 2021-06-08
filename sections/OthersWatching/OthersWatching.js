@@ -2,11 +2,11 @@ import React from "react"
 import Grid from "../../components/Grid/Grid"
 import Card from "../../components/Card/Card"
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
-import Picture from "../../public/picture-random.svg"
-import guyPicture from "../../public/avatar-guy.svg"
-import background from "../../public/background-card-1.svg"
-import machine from "../../public/machine.png"
-import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
+import Picture from "../../public/images/picture-random.svg"
+import guyPicture from "../../public/images/avatar-guy.svg"
+import background from "../../public/images/background-card-1.svg"
+import machine from "../../public/images/machine.webp"
+import LongCardWithBackground from "../../components/LongCardWithBackground/LongCardWithBackground"
 
 const OthersWatching = () => {
 	return (
@@ -33,26 +33,21 @@ const OthersWatching = () => {
 							},
 						]}
 					/>
-					<div
-						className="card-with-background"
-						style={{ background: `url(${background}) center/cover` }}
-					>
-						<div className="card-body">
-							<h3>Digital Oscilloscope</h3>
-						</div>
-						<div className="card-footer">
-							<ArrowCallToAction dark text="Learn More" />
-						</div>
-					</div>
+					<Card
+						background={background}
+						headlineSecond="Digital Oscilloscope"
+						dark
+						arrowOnly
+						arrowOnlyText="Learn More"
+					/>
 				</div>
+
 				<div className="others-watching-grid-middle">
-					<div className="card-with-image-bottom">
-						<div className="card-top">
-							<span className="body">Quick tutorials</span>
-							<h3>How to build</h3>
-							<ArrowCallToAction />
-						</div>
-					</div>
+					<LongCardWithBackground
+						background={machine}
+						headline="How to build"
+						topText="Quick tutorials"
+					/>
 				</div>
 				<div className="others-watching-grid-right">
 					<Card
