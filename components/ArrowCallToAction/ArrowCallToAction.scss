@@ -1,16 +1,5 @@
 @import "../../styles/base/colors.scss";
-
-// fontsizes
-$heading: 70px;
-$headline: 60px;
-$subheadline: 40px;
-$title: 18px;
-$body: 16px;
-$tag: 10px;
-
-// fontweights
-$regular: 400;
-$bold: 700;
+@import "../../styles/base/typography";
 
 .title {
 	margin: 0;
