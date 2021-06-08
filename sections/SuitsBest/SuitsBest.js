@@ -1,11 +1,12 @@
 import React from "react"
 import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
+import LowOpacityText from "../../components/LowOpacityText/LowOpacityText"
 
 const SuitsBest = () => {
 	return (
 		<div className="suits-best-banner">
 			<div className="suits-best-left">
-				<h2 style={{ opacity: "50%" }}>Need help?</h2>
+				<LowOpacityText bigText>Need help?</LowOpacityText>
 				<h2>Not sure about which course suits you the best?</h2>
 			</div>
 			<div className="suits-best-right">

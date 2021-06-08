@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Button = (props) => {
 	return (
@@ -6,6 +7,10 @@ const Button = (props) => {
 			FOLLOW
 		</button>
 	)
+}
+
+Button.propTypes = {
+	secondary: PropTypes.bool,
 }
 
 export default Button

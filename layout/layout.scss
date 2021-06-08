@@ -1,0 +1,60 @@
+@import "../styles/base/colors";
+@import "../styles/utils/breakpoints";
+@import "../styles/base/rules";
+
+.layout {
+	display: flex;
+	@include mobile {
+		flex-direction: column;
+	}
+
+	@include xxlscreen {
+		flex-direction: row;
+	}
+
+	.left-col {
+		width: 85px;
+		height: 100vh;
+
+		@include mobile {
+			height: 85px;
+			width: 100vw;
+		}
+
+		@include xxlscreen {
+			width: 85px;
+			height: 100vh;
+		}
+	}
+
+	.right-col {
+		width: 100%;
+
+		margin: 0 auto;
+		overflow: hidden;
+
+		@include mobile {
+			width: $containerWidthMobile;
+		}
+
+		@include tablet {
+			width: $containerWidthTablet;
+		}
+
+		@include smallscreen {
+			width: $containerWidthSmallScreen;
+		}
+
+		@include largescreen {
+			width: $containerWidthLargeScreen;
+		}
+
+		@include xlscreen {
+			width: $containerXLScreen;
+		}
+
+		@include xxlscreen {
+			width: $containerXXLScreen;
+		}
+	}
+}

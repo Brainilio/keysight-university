@@ -1,0 +1,59 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/rules";
+@import "../../styles/utils/breakpoints";
+
+.footer-block {
+	height: 116px;
+	display: flex;
+
+	@include mobile {
+		display: none;
+	}
+
+	@include tablet {
+		display: flex;
+		height: auto;
+	}
+
+	@include smallscreen {
+		display: flex;
+	}
+
+	.footer-text {
+		display: grid;
+		grid-gap: 8px;
+		justify-items: start;
+
+		@include smallscreen {
+			margin: 0 2em;
+		}
+
+		@include xlscreen {
+			margin: 0;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin: 15px 0;
+			}
+		}
+	}
+
+	.small-divider {
+		margin-right: 60px;
+		border-left: 2px solid $midnight-lighter;
+		height: 180px;
+
+		@include mobile {
+			display: none;
+		}
+
+		@include xlscreen {
+			display: block;
+		}
+	}
+}

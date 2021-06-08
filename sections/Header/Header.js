@@ -1,13 +1,13 @@
 import React from "react"
-import Logo from "../Logo/Logo"
-import ArrowCallToAction from "../ArrowCallToAction/ArrowCallToAction"
-import Divider from "../Divider/Divider"
+import Logo from "../../components/Logo/Logo"
+import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
+import Divider from "../../components/Divider/Divider"
 
 const Header = () => {
 	return (
 		<div className="landing-header">
 			<div className="landing-header-content">
-				<Logo width="170" />
+				<Logo width="170px" />
 				<Divider />
 				<div className="landing-header-text">
 					<div className="landing-header-text-title">

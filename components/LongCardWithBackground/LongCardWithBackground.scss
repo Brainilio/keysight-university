@@ -1,0 +1,41 @@
+@import "../../styles/base/colors.scss";
+
+@import "../../styles/utils/breakpoints";
+
+.card-with-image-at-bottom {
+	padding: 60px;
+	box-sizing: border-box;
+	background-color: $sky;
+	padding-bottom: 0px;
+	min-height: 786px;
+	overflow: hidden;
+
+	@include mobile {
+		width: 100%;
+		padding: 60px 10px;
+	}
+
+	@include smallscreen {
+		width: 100%;
+		padding: 40px;
+	}
+
+	@include largescreen {
+		width: 100%;
+
+		padding: 60px;
+	}
+
+	@include xxlscreen {
+		padding: 60px;
+		width: 100%;
+	}
+
+	.card-top {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+		z-index: 1;
+	}
+}
