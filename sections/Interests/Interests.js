@@ -19,7 +19,7 @@ const Interests = () => {
 					<InterestBlock title="Robotic" />
 					<InterestBlock title="Aerospace" />
 					<div className="carousel-arrows">
-						<img src={carouselArrows} />
+						<img src={carouselArrows} alt="carousel arrows" />
 					</div>
 				</div>
 			</div>

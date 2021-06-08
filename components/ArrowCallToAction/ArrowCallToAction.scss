@@ -1,15 +1,30 @@
 @import "../../styles/base/colors.scss";
 
+// fontsizes
+$heading: 70px;
+$headline: 60px;
+$subheadline: 40px;
+$title: 18px;
+$body: 16px;
+$tag: 10px;
+
+// fontweights
+$regular: 400;
+$bold: 700;
+
 .title {
 	margin: 0;
 	padding: 0;
+	margin: 0;
+	padding: 0;
+	font-size: $title;
+	font-weight: $bold;
 
-	h4 {
-	}
 	img {
 		margin-top: 10px;
 		transition: 0.1s linear;
 	}
+
 	&:hover {
 		img {
 			transform: translateX(5px);
