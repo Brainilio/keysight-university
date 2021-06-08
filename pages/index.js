@@ -10,6 +10,7 @@ import Discover from "../sections/Discover/Discover"
 import GetInspired from "../sections/GetInspired/GetInspired"
 import Layout from "../layout/layout"
 import { useEffect } from "react"
+import Footer from "../sections/Footer/Footer"
 
 export default function Home() {
 	useEffect(() => {
@@ -32,6 +33,7 @@ export default function Home() {
 				<SuitsBest />
 				<Discover />
 				<GetInspired />
+				<Footer />
 			</Layout>
 		</div>
 	)

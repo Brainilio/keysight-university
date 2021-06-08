@@ -11,7 +11,6 @@ const layout = (props) => {
 				</header>
 				<main className="right-col">{props.children}</main>
 			</div>
-			<Footer />
 		</>
 	)
 }

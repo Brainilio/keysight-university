@@ -8,7 +8,6 @@
 	width: 100%;
 	height: 200px;
 	display: flex;
-	justify-content: space-between;
 
 	@include mobile {
 		align-items: center;
