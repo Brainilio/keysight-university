@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
 import Card from "../../components/Card/Card"
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
@@ -11,11 +11,18 @@ import background from "../../public/images/background-card-1.svg"
 import Picture from "../../public/images/picture-random.svg"
 import tutorial3 from "../../public/images/tutorialcardgrid.webp"
 import wolverinebg from "../../public/images/backgroundwolverine.webp"
+import { staggerChildrenForInspiredSection } from "../../utils/_animations"
 
 const GetInspired = () => {
+	const grid = useRef(null)
+
+	useEffect(() => {
+		staggerChildrenForInspiredSection(grid.current)
+	}, [])
+
 	return (
 		<SectionWrapper title="Get inspired to learn">
-			<div className="inspired-grid">
+			<div className="inspired-grid" ref={grid}>
 				<div className="inspired-left">
 					<Card
 						dark

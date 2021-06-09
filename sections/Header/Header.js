@@ -1,11 +1,16 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import Logo from "../../components/Logo/Logo"
 import ArrowCallToAction from "../../components/ArrowCallToAction/ArrowCallToAction"
 import Divider from "../../components/Divider/Divider"
+import { fadeIn } from "../../utils/_animations"
 
 const Header = () => {
+	const header = useRef(null)
+	useEffect(() => {
+		fadeIn(header.current, true)
+	}, [])
 	return (
-		<div className="landing-header">
+		<div className="landing-header" ref={header}>
 			<div className="landing-header-content">
 				<Logo width="170px" height="170px" />
 				<Divider />

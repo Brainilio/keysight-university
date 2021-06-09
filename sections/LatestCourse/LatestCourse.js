@@ -1,15 +1,19 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import Card from "../../components/Card/Card"
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper"
 import latestcoursepic from "../../public/images/woman-latest-course.svg"
 import Picture from "../../public/images/picture-random.svg"
-import Image from "next/image"
+import { fadeIn } from "../../utils/_animations"
 
 const LatestCourse = () => {
+	const latestCourse = useRef(null)
+	useEffect(() => {
+		fadeIn(latestCourse.current, false)
+	}, [])
 	return (
 		<SectionWrapper title="Brand new course" hideViewAll>
-			<div className="latest-course-card">
-				<Image
+			<div className="latest-course-card" ref={latestCourse}>
+				<img
 					draggable="false"
 					src={latestcoursepic}
 					className="latest-course-picture"
@@ -17,8 +21,8 @@ const LatestCourse = () => {
 						objectFit: "cover",
 						objectPosition: "center",
 					}}
-					height="530px"
-					width="670px"
+					width="100%"
+					height="100%"
 					alt="lady looking at camera"
 				/>
 				<Card
