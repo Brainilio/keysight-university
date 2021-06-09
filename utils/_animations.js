@@ -48,7 +48,7 @@ export const staggerChildrenForInspiredSection = (element) => {
 	)
 }
 
-export const fadeIn = (element, noScrollTrigger) => {
+export const fadeIn = (element, noScrollTrigger = true) => {
 	if (noScrollTrigger) {
 		gsap.from(element, {
 			opacity: 0,

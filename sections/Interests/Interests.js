@@ -9,7 +9,7 @@ const Interests = () => {
 	const interestRow = useRef(null)
 
 	useEffect(() => {
-		fromRightIn(interestRow.current)
+		fromRightIn(interestRow.current, true)
 	}, [])
 
 	return (
